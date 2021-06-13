@@ -6,7 +6,10 @@ function check(botao) {
             window.document.getElementById("termometria").style.display = "block";
             window.document.getElementById("menus").style.display = "none";
             break;
-
+        case "calorimetria":
+            window.document.getElementById("calorimetria").style.display = "block";
+            window.document.getElementById("menus").style.display = "none";
+            break
         default:
             alert("deu ruim");
             break;
@@ -20,11 +23,12 @@ function retorno(v) {
             window.document.getElementById("menus").style.display = "block";
             break;
 
-        case "votarcalo":
-            alert("kkk");
+        case "vt_cal":
+            window.document.getElementById("calorimetria").style.display = "none";
+            window.document.getElementById("menus").style.display = "block";
             break;
-        default:
 
+        default:
             break;
     }
 }

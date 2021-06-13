@@ -154,7 +154,8 @@ footer {
     color: rgb(208, 255, 0);
 }
 
-.formulario {
+.formulario,
+.sobre {
     background: rgba(0, 0, 0, 0.712);
     color: white;
     padding: 10px;
@@ -167,10 +168,14 @@ footer {
     height: 500px;
 }
 
+#termometria,
+#calorimetria {
+    display: none;
+}
+
 #termometria {
     color: orange;
     border-color: orange;
-    display: none;
 }
 
 .formulario h3 {
@@ -232,4 +237,26 @@ footer {
 .b-menor {
     position: relative;
     bottom: 65px;
+}
+
+#res {
+    margin: auto;
+    padding: 10px;
+}
+
+#res input {
+    width: 500px;
+    height: 50px;
+    font-size: 32px;
+}
+
+.sobre {
+    text-align: center;
+    font-size: 34px;
+    text-shadow: 2px 2px 2px aqua;
+}
+
+.sobre ul li {
+    font-size: 30px;
+    padding-top: 10px;
 }
