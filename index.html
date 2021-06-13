@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>maquina-fisica</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html"><img src="img/logo.png" alt="logo">
+            <h1>maquina fisica</h1>
+        </a>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">sobre</a>
+                </li>
+                <li>
+                    <a href="#">como usar</a>
+                </li>
+                <li>
+                    <a href="#">criador</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="menus">
+        <section class="menucentral" id="termofisica">
+            <h2>calor e temperatura</h2>
+            <div class="botoes">
+                <a href="#termometria"><button value="termometria" onclick="check(this.value)">TERMOMETRIA</button></a>
+            </div>
+            <div class="botoes">
+                <a href="#calorimetria"><button value="calorimetria"
+                        onclick="check(this.value)">CALORIMETRIA</button></a>
+
+            </div>
+            <div class="botoes">
+                <a><button value="dilatacao" onclick="check(this.value)">DILATAÇÃO TÉRMICA</button></a>
+            </div>
+
+
+
+        </section>
+
+        <section class="menucentral" id="mecanica">
+            <h2>mecânica</h2>
+            <div class="botoes">
+                <a><button>MUV</button></a>
+            </div>
+            <div class="botoes">
+                <a><button>MRUV</button></a>
+
+            </div>
+
+
+
+        </section>
+        <section class="menucentral" id="eletricidade">
+            <h2>eletricidade</h2>
+            <div class="botoes">
+                <a><button>carga eletrica</button></a>
+            </div>
+
+
+
+
+        </section>
+    </div>
+
+    <section id="termometria" class="formulario">
+        <h3>Termometria</h3>
+
+
+        <label for="t_celcius">celcius(°C)</label>
+        <input type="number" name="t_celcius" id="c" class="barr">
+
+        <label for="t_faren">fahrenheit(°F)</label>
+        <input type="number" name="t_faren" id="f" class="barr">
+
+        <label for="t_kelvin">Kelvin(k)</label>
+        <input type="number" name="t_kelvin" id="k" class="barr">
+
+
+        <input type="button" value="voltar" id="voltartermo" class="buto" onclick="retorno(this.id)">
+
+        <input type="button" value="calcular" onclick="termo()" class="buto">
+
+        <input type="button" value="limpar" onclick="erase()" class="buto">
+
+    </section>
+
+    <section id="calorimetria" class="formulario">
+        <div class="box">
+            <h3>calor sensível</h3>
+            <label for="massa">massa</label>
+            <input type="number" name="massa" id="m" class="barr">
+
+            <label for="dt">variação de temperatura</label>
+            <input type="number" name="dt" id="dt" class="barr">
+
+            <label for="ca">calor específico</label>
+            <input type="number" name="ca" id="ca" class="barr">
+        </div>
+
+        <div class="box b-menor">
+
+            <h3>calor sensível</h3>
+            <label for="massa">massa</label>
+            <input type="number" name="massa" id="m" class="barr">
+
+            <label for="dt">variação de temperatura</label>
+            <input type="number" name="dt" id="dt" class="barr">
+
+
+        </div>
+        <div class="botuni">
+            <input type="button" value="voltar" id="voltarcalo" class="buto" onclick="retorno(this.id)">
+            <input type="button" value="calcular" onclick="calori()" class="buto">
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <p>isaías santos &copy</p>
+        <address>RJ - Nitéroi</address>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
