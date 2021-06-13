@@ -52,10 +52,10 @@
         <section class="menucentral" id="mecanica">
             <h2>mecânica</h2>
             <div class="botoes">
-                <a><button>MUV</button></a>
+                <a><button onclick="check(this.value)" value="muv">MUV</button></a>
             </div>
             <div class="botoes">
-                <a><button>MRUV</button></a>
+                <a><button button onclick="check(this.value)" value="mruv">MRUV</button></a>
 
             </div>
 
@@ -65,7 +65,7 @@
         <section class="menucentral" id="eletricidade">
             <h2>eletricidade</h2>
             <div class="botoes">
-                <a><button>carga eletrica</button></a>
+                <a><button onclick="check(this.value)" value="carga">carga eletrica</button></a>
             </div>
 
 
@@ -74,13 +74,8 @@
         </section>
 
         <section class="sobre">
-            <h3>como usar</h3>
-            <ul>
-                <li>-clique no botão desejado</li>
-                <li>-digite os valores nos espaços</li>
-                <li>-calcule</li>
-                <li>-clique em voltar</li>
-            </ul>
+
+
 
         </section>
 
@@ -102,30 +97,30 @@
 
         <input type="button" value="voltar" id="voltartermo" class="buto" onclick="retorno(this.id)">
 
-        <input type="button" value="calcular" onclick="termo()" class="buto">
+        <input type="button" value="calcular" onclick="calculo(this.id)" class="buto" id="termo-calc">
 
-        <input type="button" value="limpar" onclick="erase()" class="buto">
+        <input type="button" value="limpar" onclick="erase(this.id)" class="buto" id="limp-termo">
 
     </section>
 
     <section id="calorimetria" class="formulario">
         <div class="box">
             <h3>calor sensível</h3>
-            <label for="massa">massa(m)</label>
+            <label for="massa">massa(g)</label>
             <input type="number" name="massa_s" id="m_s" class="barr">
 
             <label for="dt">variação de temperatura (<small><sup>O</sup></small>C)</label>
             <input type="number" name="dt" id="dt" class="barr">
 
             <label for="ca">calor específico (cal/g<sup>o</sup>C)</label>
-            <input type="number" name="ca" id="ca" class="barr">
+            <input type="number" name="c_e" id="c_e" class="barr">
         </div>
 
         <div class="box b-menor">
 
             <h3>calor latente</h3>
-            <label for="massa">massa</label>
-            <input type="number" name="massa_l" id="m" class="barr">
+            <label for="massa">massa(g)</label>
+            <input type="number" name="massa_l" id="ml" class="barr">
 
             <label for="dt">calor latente(cal/g)</label>
             <input type="number" name="c_l" id="c_l" class="barr">
@@ -135,10 +130,11 @@
 
         <div id="res">
             <input type="number" name="resposta" id="respost">
+            <p>calorias</p>
         </div>
         <div class="botuni">
             <input type="button" value="voltar" id="vt_cal" class="buto" onclick="retorno(this.id)">
-            <input type="button" value="calcular" onclick="calori()" class="buto">
+            <input type="button" value="calcular" onclick="calculo(this.id)" class="buto" id="calor">
 
         </div>
 
