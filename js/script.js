@@ -106,18 +106,20 @@ function calculo(tip) {
             var c_l = Number(calorl.value);
 
             if (m != 0 && dt != 0 && c_e != 0) {
+                massa_l.value = 0;
+                calorl.value = 0;
+
                 resposta.value = m * dt * c_e;
             }
             if (c_l != 0 && ml != 0) {
-                resposta.value = ml * c_l;
-            }
-            if (m != 0 && dt != 0 && c_e != 0 && c_l != 0 && ml != 0) {
+
                 massa.value = 0;
-                massa_l.value = 0;
-                calorl.value = 0;
                 caloresp.value = 0;
                 variacaot.value = 0;
+
+                resposta.value = ml * c_l;
             }
+
             break;
 
         default:
