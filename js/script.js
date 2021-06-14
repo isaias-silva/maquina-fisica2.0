@@ -11,7 +11,7 @@ function check(botao) {
             window.document.getElementById("menus").style.display = "none";
             break;
         default:
-            alert("deu ruim");
+            alert("Não configurado");
             break;
     }
 }
