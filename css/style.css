@@ -259,3 +259,9 @@ footer {
     font-size: 30px;
     padding-top: 10px;
 }
+
+#muv {
+    border-color: rgb(93, 186, 93);
+    color: rgb(0, 255, 0);
+    text-shadow: 2px 2px 2px green;
+}

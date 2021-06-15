@@ -10,6 +10,10 @@ function check(botao) {
             window.document.getElementById("calorimetria").style.display = "block";
             window.document.getElementById("menus").style.display = "none";
             break;
+        case "muv":
+            break;
+
+
         default:
             alert("Não configurado");
             break;
